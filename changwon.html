@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_262549c1c24746bd8eae8a6461f72d0b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_262549c1c24746bd8eae8a6461f72d0b" ></div>
+        
+</body>
+<script>    
+    
+            var map_262549c1c24746bd8eae8a6461f72d0b = L.map(
+                "map_262549c1c24746bd8eae8a6461f72d0b",
+                {
+                    center: [35.2638433, 128.66802609],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_40204779a0ad43e28d3f66b33f36aa83 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var tile_layer_3f8f12c13fd44c7d953989214132ecb6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_01ab4463e97641c7aa9454fe40436764 = new L.Control.MiniMap(
+                tile_layer_3f8f12c13fd44c7d953989214132ecb6,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_262549c1c24746bd8eae8a6461f72d0b.addControl(mini_map_01ab4463e97641c7aa9454fe40436764);
+        
+    
+            var marker_22ee15312c9442789fbc135cfd133e6e = L.marker(
+                [35.29124576701852, 128.67587685585022],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_9ad8d67f33364803918421f99591bb21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_22ee15312c9442789fbc135cfd133e6e.setIcon(icon_9ad8d67f33364803918421f99591bb21);
+        
+    
+            marker_22ee15312c9442789fbc135cfd133e6e.bindTooltip(
+                `<div>
+                     동읍동중학교 앞 : 16개 경남 창원시 의창구 동읍 신방리 871-6 수로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2a999ac3ed843da9e3d759b489f85bc = L.marker(
+                [35.27961762134518, 128.6887192726135],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_7157d788308d4efabf2a7a537fafbb32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a2a999ac3ed843da9e3d759b489f85bc.setIcon(icon_7157d788308d4efabf2a7a537fafbb32);
+        
+    
+            marker_a2a999ac3ed843da9e3d759b489f85bc.bindTooltip(
+                `<div>
+                     동읍보건지소 : 15개 경남 창원시 의창구 동읍 용잠리 230-7 대
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72d0a7440b2e418182a21b865111ff25 = L.marker(
+                [35.284487151637784, 128.68202716112137],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_7d53cb7266064c4e80f5f44a1ee1bd3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_72d0a7440b2e418182a21b865111ff25.setIcon(icon_7d53cb7266064c4e80f5f44a1ee1bd3f);
+        
+    
+            marker_72d0a7440b2e418182a21b865111ff25.bindTooltip(
+                `<div>
+                     동읍사무소 : 15개 경남 창원시 의창구 동읍 용잠리 575
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05b8353b77664466a7ffbb27fd78d95a = L.marker(
+                [35.27715209102142, 128.7005665898323],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_1f9a9ae84dd3404e914551a52ea1127e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_05b8353b77664466a7ffbb27fd78d95a.setIcon(icon_1f9a9ae84dd3404e914551a52ea1127e);
+        
+    
+            marker_05b8353b77664466a7ffbb27fd78d95a.bindTooltip(
+                `<div>
+                     자여민원센터 : 10개 경남 창원시 의창구 동읍 송정리 98-21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbb70f77efd9450b967f7b2309be7ec8 = L.marker(
+                [35.3060586, 128.6782436],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_ee3af83fd0b1432f932ee84ffeab33a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cbb70f77efd9450b967f7b2309be7ec8.setIcon(icon_ee3af83fd0b1432f932ee84ffeab33a8);
+        
+    
+            marker_cbb70f77efd9450b967f7b2309be7ec8.bindTooltip(
+                `<div>
+                     주남저수지 주차장 : 15개 경남 창원시 의창구 동읍 월잠리 303-7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f63ada8f12014da595a2f7f84315e54b = L.marker(
+                [35.301280600000005, 128.5942011],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_c0dcaaa303ba47c4a45a901a27fcf690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f63ada8f12014da595a2f7f84315e54b.setIcon(icon_c0dcaaa303ba47c4a45a901a27fcf690);
+        
+    
+            marker_f63ada8f12014da595a2f7f84315e54b.bindTooltip(
+                `<div>
+                     감계공원 : 10개 경남 창원시 의창구 북면 감계리 237-1 (경남은행북면점앞)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3ea32384fab4f93bf18591f916268ac = L.marker(
+                [35.3023499, 128.5903715],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_a1b8a9bf7a154a8780b344ef938a102e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3ea32384fab4f93bf18591f916268ac.setIcon(icon_a1b8a9bf7a154a8780b344ef938a102e);
+        
+    
+            marker_d3ea32384fab4f93bf18591f916268ac.bindTooltip(
+                `<div>
+                     감계덕산아내APT버스정류소옆 : 10개 경남 창원시 의창구 북면 감계리 740-2 (덕산아내버스정류소)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_def7fa626aad49d0959f78417a11939c = L.marker(
+                [35.34809692907513, 128.60760927200315],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_0668ceb885aa45b8a7b4204c5d26bd34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_def7fa626aad49d0959f78417a11939c.setIcon(icon_0668ceb885aa45b8a7b4204c5d26bd34);
+        
+    
+            marker_def7fa626aad49d0959f78417a11939c.bindTooltip(
+                `<div>
+                     북면사무소 : 15개 경남 창원시 의창구 북면 신촌리 964-5 전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98a0e4bb85b240d49b390fabd51521a7 = L.marker(
+                [35.353290479980835, 128.61167550086978],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_a809caf9f7dc4d7288856e9c68057ed2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_98a0e4bb85b240d49b390fabd51521a7.setIcon(icon_a809caf9f7dc4d7288856e9c68057ed2);
+        
+    
+            marker_98a0e4bb85b240d49b390fabd51521a7.bindTooltip(
+                `<div>
+                     북면족욕체험장 : 12개 경남 창원시 의창구 북면 신촌리 북면온천
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35d15c13231843ef94c9be0494003095 = L.marker(
+                [35.261509771627146, 128.62609505653379],
+                {}
+            ).addTo(map_262549c1c24746bd8eae8a6461f72d0b);
+        
+    
+            var icon_2cc7073cd66c4803ad2d67ee5659f5dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35d15c13231843ef94c9be0494003095.setIcon(icon_2cc7073cd66c4803ad2d67ee5659f5dd);
+        
+    
+            marker_35d15c13231843ef94c9be0494003095.bindTooltip(
+                `<div>
+                     39사단 앞 : 20개 경남 창원시 의창구 소답동  114번지 앞 보도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
